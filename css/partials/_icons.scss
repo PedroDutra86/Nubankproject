@@ -1,3 +1,92 @@
 .dropShadow{
     filter: drop-shadow(0px 16px 24px rgba(169,80,196,0.25));
 }
+
+.bg-icon-mobile{
+    &::after{
+        content: '';
+        background-image: url('../svg/icon-phone.svg');
+        background-size: cover;
+        transition: .5s ease;
+
+        cursor: pointer;
+
+        filter: drop-shadow(0px 16px 24px rgba(169,80,196,0.25));
+    }
+
+    &:hover{
+        &::after{
+            transform: scale(1.06);
+        }
+    }
+}
+
+.bg-icon-time{
+    &::after{
+        content: '';
+        background-image: url('../svg/icon-time.svg');
+        background-size: cover;
+        transition: .5s ease;
+
+        cursor: pointer;
+
+        filter: drop-shadow(0px 16px 24px rgba(169,80,196,0.25));
+    }
+
+    &:hover{
+        &::after{
+            transform: scale(1.06);
+        }
+    }
+}
+
+.bg-icon-heard{
+    &::after{
+        content: '';
+        background-image: url('../svg/icon-heard.svg');
+        background-size: cover;
+        transition: .5s ease;
+
+        cursor: pointer;
+
+        filter: drop-shadow(0px 16px 24px rgba(169,80,196,0.25));
+    }
+
+    &:hover{
+        &::after{
+            transform: scale(1.06);
+        }
+    }
+}
+
+.bg-icon-check{
+    &::after{
+        content: '';
+        background-image: url('../svg/icon-verify.svg');
+        background-size: cover;
+        transition: .5s ease;
+
+        width: 40px;
+        height: 40px;
+
+        @include responsive(s){
+            width: 25px;
+            height: 25px;
+            top: 4px;
+            left: 32px;
+        }
+
+        top: 0px;
+        left: 4px;
+
+        cursor: pointer;
+
+        filter: drop-shadow(0px 16px 24px rgba(169,80,196,0.25));
+    }
+
+    &:hover{
+        &::after{
+            transform: scale(1.06);
+        }
+    }
+}
